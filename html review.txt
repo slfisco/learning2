@@ -1,0 +1,13 @@
+html review:
+meta tag - defines properties of the document
+- "charset" - encoding
+- "robots" = should this page be indexed
+link tag - links files such as css sheet, webpage icon
+hr is horizontal rule(line)
+paragraph is 2 line breaks
+pre is preformatted text
+abbr shows tooltip so you can give the full name of an abbreviation
+same with dfn (definition)
+characters accessed using &
+bdo - bidirectional override (for reversing text direction)
+can link to other parts of the page by using <a id="waypoint1"> then referencing it using ga href = file.html#waypoint1

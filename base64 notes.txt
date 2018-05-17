@@ -1,0 +1,29 @@
+Encoding:
+binary is 8 bits
+positions have base values: 2^7, 2^6, 2^5, 2^4, 2^3, 2^2, 2^1, 2^0 or 128, 64, 32, 16, 8, 4, 2, 1
+
+base64 is 6 bits corresponding to 64 characters
+
+A is ascii code 65
+- 65 in binary is 01000001
+- this is 64 + 1
+
+for base64, take binary and divide it into 6 bit groups
+any extra bits become ==
+CAT is ascii code 67, 65, 84
+in 8 bit binary this is
+01000011,01000001,01010100
+in base64 this is:
+010000,110100,000101,010100
+aka 16, 52, 5, 20
+Q0FU
+
+hexadecimal is similar but in groups of 4
+let's try this
+01000011,01000001,01010100
+0100-0011-0100-0001-0101-0100
+4,3,4,1,5,4
+434154
+
+python has built in hashing library hashlib
+python also has built in encoding decoding - to convert from hex to base64
